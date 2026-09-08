@@ -1,0 +1,52 @@
+#################################
+# Developed by: @skbaby with <3 #
+# ###############################
+
+gui:
+  title: "&1&l[ &b&lCALCULATOR &0&l]" # The title of the calculator GUI, you can see it in the top of the inventory
+  size: 36 # The size of the calculator GUI, must be a multiple of 9
+  display-slot: 4 # The slot where the display item will be placed, must be between 0 and 35
+  background-material: "BLACK_STAINED_GLASS_PANE" # The material of the background items, must be a valid Minecraft material
+  button-slots: # The slots where the buttons will be placed, must be between 0 and 35
+    "7": 10
+    "8": 11
+    "9": 12
+    "division": 13
+    "4": 19
+    "5": 20
+    "6": 21
+    "multiplication": 22
+    "1": 28
+    "2": 29
+    "3": 30
+    "subtraction": 31
+    "0": 34
+    "decimal": 35
+    "equals": 32
+    "addition": 33
+    "clear": 16
+    "backspace": 25
+  materials: # The materials of the buttons, must be valid Minecraft materials
+        number: "LIGHT_BLUE_CONCRETE"
+        decimal: "DIAMOND_BLOCK"
+        operation: "AMETHYST_BLOCK"
+        equals: "EMERALD_BLOCK"
+        clear: "REDSTONE_BLOCK"
+        backspace: "GOLD_BLOCK"
+        display: "BLACK_CONCRETE"
+
+messages: # The messages that will be sent to the player, you can use color codes and placeholders
+  only-player: "&cSolo i giocatori possono usare questo comando."
+  no-permission: "&cNon hai il permesso di usare la calcolatrice."
+  invalid-arguments: "&cUtilizzo: /calculator [reload]"
+  reload-success: "&aConfigurazione ricaricata."
+  reload-no-permission: "&cNon hai il permesso di ricaricare la configurazione."
+  division-by-zero: "&cErrore: non puoi dividere per zero."
+  invalid-calculation: "&cInserisci un calcolo completo prima di premere '='."
+  results-chat:
+    enabled: true
+    format: "&7[&aCalcolatrice&7] &fIl risultato è: &e{result}"
+
+permissions: # The permissions that will be used by the plugin, you can change them if you want
+  use: "minecraftcalculator.use"
+  reload: "minecraftcalculator.reload"
