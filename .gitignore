@@ -1,0 +1,14 @@
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Build output
+*.jar
+*.class
+
+# Local environment
+.env
+*.local
