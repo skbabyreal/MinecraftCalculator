@@ -1,0 +1,19 @@
+name: MinecraftCalculator
+version: '1.21'
+
+main: org.bowteleport.minecraftCalculator.MinecraftCalculator
+api-version: '1.21'
+description: A calculator plugin for Minecraft that allows players to perform calculations in-game.
+authors: [skbaby]
+commands:
+  calculator:
+    description: Opens the calculator interface
+    aliases: [calc, calcui]
+    permission: minecraftcalculator.use
+permissions:
+  minecraftcalculator.use:
+    description: Allows a player to use the calculator
+    default: true
+  minecraftcalculator.reload:
+    description: Allows reloading the calculator configuration
+    default: op
